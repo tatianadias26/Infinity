@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.caixa {
+    background-color: #611CDB;
+    color: azure;
+    font-size: 24px;
+}
+
+.texto-destaque {
+    font-weight: 900;
+}
+
+#a1 {
+    border: 3px dashed #7A6D31;
+}

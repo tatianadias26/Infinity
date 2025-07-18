@@ -1,0 +1,18 @@
+.cabecalho {
+    color: blueviolet;
+}
+
+.paragrafo{
+    border: 2px solid;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+.dimensoes{
+    width: 100px;
+    border: 1px solid red;
+    border-radius: 40px;
+}
