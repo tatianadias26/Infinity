@@ -1,0 +1,14 @@
+:root {
+    --tamanho-texto: 26px;
+    --cor-fundo-padrao: magenta;
+}
+
+.texto-inicial {
+    font-size: var(--tamanho-texto);
+    color: var(--cor-fundo-padrao);
+}
+
+.texto-corpo {
+    font-size: var(--tamanho-texto);
+    color: var(--cor-fundo-padrao);
+}
