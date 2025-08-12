@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Block e Inline</title>
+    <style>
+        .bloco {
+            background-color: lightcoral;
+            border: 2px solid red;
+            margin: 10px;
+            padding: 10px;
+            /* Note que cada div ocupa uma nova linha */
+        }
+        .linha {
+            background-color: lightblue;
+            border: 2px solid blue;
+            margin: 5px;
+            padding: 5px;
+            /* Note que os spans ficam na mesma linha */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Elementos com display: block</h2>
+    <div class="bloco">Este é um elemento de bloco. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit doloribus alias quod temporibus ea consectetur, nemo minima aperiam. Dolorem placeat rem, tenetur fugiat fugit laboriosam ducimus fuga recusandae ipsum amet.</div>
+    <div class="bloco">Este é outro elemento de bloco.</div>
+
+    <hr>
+
+    <h2>Elementos com display: inline</h2>
+    <span class="linha">Este é um elemento de linha.</span>
+    <span class="linha">Este é outro elemento de linha.</span>
+
+</body>
+</html>

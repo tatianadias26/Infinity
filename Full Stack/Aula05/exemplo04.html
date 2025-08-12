@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Posicionamento em CSS</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            min-height: 200vh; /* Permite a rolagem para testar 'fixed' e 'sticky' */
+        }
+
+        .secao {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        /* --- Estilos para o exemplo 'static' --- */
+        .static-box {
+            background-color: lightcoral;
+            border: 2px dashed red;
+            padding: 10px;
+            margin-top: 10px;
+            /* Tentativa de posicionamento, que não funcionará em 'static' */
+            top: 20px;
+            left: 50px;
+        }
+
+        /* --- Estilos para o exemplo 'relative' --- */
+        .relative-box-container {
+            background-color: #e0f7fa;
+            border: 2px solid #00acc1;
+            height: 120px;
+            margin-top: 20px;
+        }
+
+        .relative-box {
+            position: relative;
+            background-color: #00bcd4;
+            border: 2px solid #00796b;
+            padding: 10px;
+            width: 150px;
+            top: 20px;
+            left: 30px;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* --- Estilos para o exemplo 'absolute' --- */
+        .absolute-parent {
+            position: relative; /* O elemento-pai deve ser 'relative' para o 'absolute' funcionar como esperado */
+            background-color: #fff3e0;
+            border: 2px solid #ff9800;
+            height: 200px;
+        }
+
+        .absolute-child {
+            position: absolute;
+            background-color: #ff5722;
+            padding: 10px;
+            width: 100px;
+            color: white;
+            font-weight: bold;
+            top: 20px;
+            right: 20px;
+        }
+
+        /* --- Estilos para o exemplo 'fixed' --- */
+        .fixed-menu {
+            position: fixed;
+            bottom: 20px; /* Gruda na parte inferior da tela */
+            right: 20px; /* Gruda na lateral direita da tela */
+            background-color: #4caf50;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1000; /* Garante que o elemento fique acima de outros */
+        }
+        
+        /* --- Estilos para o exemplo 'sticky' --- */
+        .sticky-container {
+            height: 400px;
+            overflow-y: scroll; /* Cria uma área de rolagem interna */
+            background-color: #e8f5e9;
+            border: 1px solid #a5d6a7;
+            padding: 15px;
+        }
+
+        .sticky-header {
+            position: sticky;
+            top: 0; /* O elemento fica 'grudado' no topo ao rolar */
+            background-color: #81c784;
+            color: white;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        /* Conteúdo de exemplo para a rolagem sticky */
+        .sticky-content {
+            height: 600px;
+            background-color: #c8e6c9;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="secao">
+        <h2>1. Position: static (O Padrão)</h2>
+        <p>Este é o fluxo normal do documento. A caixa abaixo tem propriedades `top` e `left`, mas elas não têm efeito, pois o posicionamento é `static`.</p>
+        <div class="static-box">Estou posicionado estaticamente.</div>
+    </div>
+
+    <div class="secao">
+        <h2>2. Position: relative (Relativo à sua Posição Original)</h2>
+        <p>Esta caixa está `relative`. Ela foi movida 20px do topo e 30px da esquerda. O espaço original que ela ocupava <strong>ainda está reservado</strong>.</p>
+        <div class="relative-box-container">
+            <div class="relative-box">Estou posicionado relativamente!</div>
+        </div>
+    </div>
+
+    <div class="secao">
+        <h2>3. Position: absolute (Relativo ao Elemento Pai)</h2>
+        <p>A caixa laranja está `absolute` e posicionada em relação ao seu contêiner (a caixa amarela), que tem `position: relative`. Ela é removida do fluxo normal.</p>
+        <div class="absolute-parent">
+            <p>Este é o contêiner-pai com `position: relative`.</p>
+            <div class="absolute-child">Estou absoluto!</div>
+        </div>
+    </div>
+    
+    <div class="secao">
+        <h2>4. Position: fixed (Fixo na Janela)</h2>
+        <p>Role a página para baixo e note que a barra verde no canto inferior direito permanece sempre visível. Ela está `fixed` em relação à tela.</p>
+        <div class="fixed-menu">Menu Fixo</div>
+    </div>
+
+    <div class="secao">
+        <h2>5. Position: sticky (Grudado na Rolagem)</h2>
+        <p>Role a caixa abaixo para ver como o cabeçalho verde se comporta. Ele se move com a rolagem até atingir o topo, onde fica "grudado".</p>
+        <div class="sticky-container">
+            <div class="sticky-header">Eu sou um cabeçalho sticky!</div>
+            <div class="sticky-content">
+                <p>Conteúdo de exemplo. Role esta área para baixo para ver o efeito sticky funcionar. Esse tipo de posicionamento é ideal para menus de navegação em áreas específicas ou títulos de seções que precisam se manter visíveis durante a leitura.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

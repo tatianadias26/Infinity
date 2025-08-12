@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+/* Estilos base para todos os exemplos */
+.secao {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Estilos do Exemplo 1: display: block e inline */
+.bloco {
+    background-color: lightcoral;
+    border: 2px solid red;
+    margin: 10px 0;
+    padding: 10px;
+}
+.linha {
+    background-color: lightblue;
+    border: 2px solid blue;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* Estilos do Exemplo 2: display: inline-block */
+.caixa-inline-bloco {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    background-color: lightgreen;
+    border: 2px solid darkgreen;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* Estilos do Exemplo 3: display: none vs visibility: hidden */
+.caixa-visibilidade {
+    width: 200px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.escondido-display {
+    background-color: lightpink;
+    display: none; 
+}
+.escondido-visibility {
+    background-color: lightskyblue;
+    visibility: hidden; 
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display none vs Visibility hidden</title>
+    <style>
+        .caixa {
+            width: 200px;
+            height: 100px;
+            background-color: #f0f0f0;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .escondido-display {
+            background-color: lightpink;
+            /* Remove o elemento do fluxo do documento */
+            display: none; 
+        }
+
+        .escondido-visibility {
+            background-color: lightskyblue;
+            /* Esconde o elemento, mas ele ainda ocupa o espaço */
+            visibility: hidden; 
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Comparando display: none e visibility: hidden</h2>
+    <p>Abaixo estão 3 caixas. A do meio está escondida, mas de maneiras diferentes.</p>
+
+    <div class="caixa">Caixa 1</div>
+    <div class="caixa escondido-display">Caixa 2 (display: none)</div>
+    <div class="caixa">Caixa 3</div>
+    
+    <hr>
+    
+    <div class="caixa">Caixa 1</div>
+    <div class="caixa escondido-visibility">Caixa 2 (visibility: hidden)</div>
+    <div class="caixa">Caixa 3</div>
+
+</body>
+</html>
