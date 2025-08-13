@@ -1,0 +1,233 @@
+/* ========================================================== */
+/* Estilos Gerais                                             */
+/* ========================================================== */
+body {
+    /* Define a família da fonte para todo o texto */
+    font-family: Arial, sans-serif;
+    /* Define a altura das linhas do texto para melhor legibilidade */
+    line-height: 1.6;
+    /* Remove a margem padrão do corpo da página */
+    margin: 0;
+    /* Remove o padding padrão do corpo da página */
+    padding: 0;
+    /* Define a cor de fundo da página */
+    background-color: #f4f4f4;
+    /* Define a cor do texto padrão */
+    color: #333;
+}
+
+/* Seletor para o cabeçalho, conteúdo principal e rodapé */
+header, main, section, footer {
+    /* Adiciona um espaçamento interno de 20px */
+    padding: 20px;
+    /* Centraliza o elemento horizontalmente com margem automática */
+    margin: 0 auto;
+    /* Define a largura máxima do elemento */
+    max-width: 960px;
+}
+
+/* ========================================================== */
+/* Box Model e Layout                                        */
+/* ========================================================== */
+/* Estilos para o cabeçalho */
+header {
+    /* Define a cor de fundo do cabeçalho */
+    background-color: #2b3074;
+    /* Define a cor do texto do cabeçalho */
+    color: white;
+    /* Alinha o texto ao centro */
+    text-align: center;
+    /* Cria uma borda inferior */
+    border-bottom: 5px solid #0056b3;
+    /* Adiciona uma margem inferior para separar do conteúdo */
+    margin-bottom: 20px;
+}
+
+/* Estilos para as seções */
+section {
+    /* Define a cor de fundo das seções */
+    background-color: white;
+    /* Adiciona uma margem inferior */
+    margin-bottom: 20px;
+    /* Adiciona um espaçamento interno de 30px */
+    padding: 30px;
+    /* Arredonda os cantos das seções */
+    border-radius: 8px;
+    /* Adiciona uma sombra sutil */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Estilos para os títulos (h1, h2, h3) */
+h1, h2, h3 {
+    /* Define a cor dos títulos */
+    color: #007bff;
+    /* Remove a margem superior padrão */
+    margin-top: 0;
+}
+
+/* Estilos para parágrafos e listas */
+p, ul, ol {
+    /* Adiciona uma margem inferior */
+    margin-bottom: 15px;
+}
+
+/* ========================================================== */
+/* Formatação de Texto                                        */
+/* ========================================================== */
+/* Estilos para o texto em negrito */
+strong {
+    /* Define o peso da fonte como negrito */
+    font-weight: bold;
+}
+
+/* Estilos para o texto em itálico */
+em {
+    /* Define o estilo da fonte como itálico */
+    font-style: italic;
+}
+
+/* ========================================================== */
+/* Links e Imagens                                            */
+/* ========================================================== */
+/* Estilos para a classe 'link-exemplo' */
+.link-exemplo {
+    /* Define a cor do link */
+    color: #007bff;
+    /* Remove a decoração de texto (sublinhado) */
+    text-decoration: none;
+    /* Define o peso da fonte como negrito */
+    font-weight: bold;
+}
+
+/* Estilos quando o mouse passa sobre o link */
+.link-exemplo:hover {
+    /* Adiciona um sublinhado ao texto */
+    text-decoration: underline;
+}
+
+/* Estilos para a div que contém a imagem */
+.box-image {
+    /* Define a largura como 100% do contêiner */
+    width: 100%;
+    /* Esconde o conteúdo que transborda */
+    overflow: hidden;
+    /* Arredonda os cantos */
+    border-radius: 8px;
+    /* Adiciona uma sombra */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Estilos para a imagem dentro da div */
+.box-image img {
+    /* Define a largura da imagem como 100% do seu contêiner */
+    width: 100%;
+    /* Mantém a proporção da imagem */
+    height: auto;
+    /* Remove qualquer espaçamento extra de linha */
+    display: block;
+}
+
+/* ========================================================== */
+/* Listas e Tabelas                                           */
+/* ========================================================== */
+/* Estilos para listas não ordenadas e ordenadas */
+ul, ol {
+    /* Adiciona um espaçamento à esquerda */
+    padding-left: 20px;
+}
+
+/* Estilos para tabelas */
+table {
+    /* Define a largura da tabela como 100% */
+    width: 100%;
+    /* Define o estilo de colapso das bordas */
+    border-collapse: collapse;
+    /* Adiciona uma margem superior */
+    margin-top: 15px;
+}
+
+/* Estilos para células de cabeçalho e de dados */
+th, td {
+    /* Adiciona uma borda fina */
+    border: 1px solid #ddd;
+    /* Adiciona um espaçamento interno */
+    padding: 8px;
+    /* Alinha o texto à esquerda */
+    text-align: left;
+}
+
+/* Estilos específicos para células de cabeçalho */
+th {
+    /* Define a cor de fundo do cabeçalho da tabela */
+    background-color: #f2f2f2;
+    /* Define a cor do texto do cabeçalho da tabela */
+    color: #555;
+}
+
+/* ========================================================== */
+/* Formulário                                                 */
+/* ========================================================== */
+/* Estilos para o grupo de formulário */
+.form-group {
+    /* Adiciona uma margem inferior */
+    margin-bottom: 15px;
+}
+
+/* Estilos para as etiquetas (labels) */
+.form-group label {
+    /* Exibe a label como um bloco para ocupar toda a largura */
+    display: block;
+    /* Adiciona uma margem inferior */
+    margin-bottom: 5px;
+}
+
+/* Estilos para os campos de input */
+.form-group input {
+    /* Define a largura como 100% */
+    width: 100%;
+    /* Adiciona um espaçamento interno */
+    padding: 10px;
+    /* Inclui padding e borda na largura do elemento */
+    box-sizing: border-box;
+    /* Adiciona uma borda */
+    border: 1px solid #ccc;
+    /* Arredonda os cantos */
+    border-radius: 4px;
+}
+
+/* Estilos para o botão */
+button {
+    /* Define a cor de fundo do botão */
+    background-color: #007bff;
+    /* Define a cor do texto do botão */
+    color: white;
+    /* Adiciona um espaçamento interno */
+    padding: 10px 15px;
+    /* Remove a borda padrão */
+    border: none;
+    /* Arredonda os cantos do botão */
+    border-radius: 4px;
+    /* Altera o cursor para indicar que é clicável */
+    cursor: pointer;
+}
+
+/* ========================================================== */
+/* Posicionamento                                             */
+/* ========================================================== */
+/* Estilos para o rodapé */
+.rodape {
+    /* Define a cor de fundo do rodapé */
+    background-color: #333;
+    /* Define a cor do texto do rodapé */
+    color: white;
+    /* Alinha o texto ao centro */
+    text-align: center;
+    /* Adiciona um espaçamento interno */
+    padding: 10px;
+    /* Define a posição como relativa */
+    position: relative;
+    /* Posiciona o elemento na parte inferior (neste caso, não afeta a posição) */
+    bottom: 0;
+    /* Define a largura como 100% do contêiner */
+    width: 100%;
+}

@@ -1,0 +1,134 @@
+body {
+    /* Define a família da fonte para todo o texto */
+    font-family: Arial, sans-serif;
+    /* Remove a margem padrão do corpo da página */
+    margin: 0;
+    /* Remove o espaçamento interno padrão do corpo da página */
+    padding: 0;
+    /* Define a cor de fundo da página */
+    background-color: #f0f0f0;
+}
+
+h1, h2 {
+    /* Remove as margens superior e inferior padrão */
+    margin: 0;
+    /* Adiciona um espaçamento interno de 10px */
+    padding: 10px;
+    /* Define a cor de fundo */
+    background-color: #333;
+    /* Define a cor do texto */
+    color: white;
+    /* Alinha o texto ao centro */
+    text-align: center;
+}
+
+/* ------------------------------------- */
+/* Elemento 1: Static (Padrão)          */
+/* ------------------------------------- */
+.element-1 {
+    /* Não precisa de 'position: static', pois é o valor padrão. */
+    /* Define a cor de fundo */
+    background-color: #3498db;
+    /* Adiciona um espaçamento interno de 10px */
+    padding: 10px;
+    /* Adiciona uma margem de 10px em todos os lados */
+    margin: 10px;
+}
+
+/* ------------------------------------- */
+/* Elemento 2: Relative                 */
+/* ------------------------------------- */
+.element-2 {
+    /* Define o posicionamento relativo ao local original do elemento */
+    position: relative;
+    /* Move o elemento 20px para baixo em relação à sua posição original */
+    top: 20px;
+    /* Move o elemento 40px para a direita em relação à sua posição original */
+    left: 40px;
+    /* Define a cor de fundo */
+    background-color: #2ecc71;
+    /* Adiciona um espaçamento interno de 10px */
+    padding: 10px;
+    /* Adiciona uma margem de 10px em todos os lados */
+    margin: 10px;
+}
+
+/* ------------------------------------- */
+/* Elemento 3: Absolute                 */
+/* ------------------------------------- */
+.relative-container {
+    /* Define o posicionamento relativo para ser a referência do elemento 'absolute' */
+    position: relative;
+    /* Define a largura do contêiner */
+    width: 600px;
+    /* Define a altura do contêiner */
+    height: 300px;
+    /* Define a cor de fundo do contêiner */
+    background-color: #eee;
+    /* Centraliza o contêiner horizontalmente com margem automática */
+    margin: 20px auto;
+    /* Adiciona uma borda tracejada */
+    border: 2px dashed #999;
+}
+
+.element-3 {
+    /* Define o posicionamento absoluto, em relação ao contêiner pai mais próximo (relative-container) */
+    position: absolute;
+    /* Posiciona o elemento 20px acima da borda inferior do contêiner pai */
+    bottom: 20px;
+    /* Posiciona o elemento 20px à esquerda da borda direita do contêiner pai */
+    right: 20px;
+    /* Define a cor de fundo */
+    background-color: #e74c3c;
+    /* Adiciona um espaçamento interno de 10px */
+    padding: 10px;
+}
+
+/* ------------------------------------- */
+/* Elemento 4: Fixed                    */
+/* ------------------------------------- */
+.fixed-element {
+    /* Define o posicionamento fixo em relação à janela do navegador */
+    position: fixed;
+    /* Anexa o elemento ao topo da janela */
+    top: 0;
+    /* Anexa o elemento à esquerda da janela */
+    left: 0;
+    /* Define a largura como 100% da janela */
+    width: 100%;
+    /* Garante que o elemento fique acima de outros, mesmo ao rolar */
+    z-index: 1000;
+}
+
+/* ------------------------------------- */
+/* Elemento 5: Sticky                   */
+/* ------------------------------------- */
+.sticky-container {
+    /* Adiciona uma altura para que a página possa rolar */
+    height: 200px;
+    /* Define a cor de fundo do contêiner */
+    background-color: #f9f9f9;
+}
+
+.sticky-element {
+    /* Define o posicionamento sticky */
+    position: sticky;
+    /* O elemento ficará fixo no topo da janela quando a rolagem atingir o topo */
+    top: 0;
+    /* Define a cor de fundo */
+    background-color: #f1c40f;
+    /* Define a ordem de empilhamento para que ele fique acima dos outros elementos */
+    z-index: 999;
+}
+
+/* Conteúdo longo para rolar a página */
+.conteudo-longo {
+    /* Define uma altura grande para que a página tenha rolagem */
+    height: 1200px;
+    /* Adiciona um espaçamento interno de 20px */
+    padding: 20px;
+    /* Centraliza o elemento horizontalmente */
+    margin: 20px auto;
+    /* Define uma largura máxima */
+    max-width: 800px;
+}
