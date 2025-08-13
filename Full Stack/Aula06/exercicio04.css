@@ -1,0 +1,35 @@
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.texto-estilizado {
+    font-size: 18px;
+    text-align: justify;
+    border: 1px solid #ddd;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.texto-estilizado::first-letter {
+    font-size: 60px; 
+    color: #007bff; 
+    font-weight: bold;
+    float: left; /* Permite que o texto flua ao redor da letra */
+    margin-right: 10px;
+    line-height: 1; /* Alinha a letra com a linha do texto */
+}
+
+
+.texto-estilizado::first-line {
+    color: #28a745; 
+    font-style: italic; 
+    font-weight: 500;
+}

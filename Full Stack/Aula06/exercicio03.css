@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+.artigo {
+    background-color: #fff;
+    text-align: justify;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    text-align: center;
+    position: relative; /* Necessário para posicionar os pseudo-elementos */
+}
+
+/* Pseudo-elementos ::before e ::after para o título */
+h2::before {
+    content: "✨ ";
+    /* O "content" é obrigatório para que o pseudo-elemento apareça */
+}
+
+h2::after {
+    content: " ✨";
+    /* O "content" é obrigatório para que o pseudo-elemento apareça */
+}
+
+/* Pseudo-elemento ::first-letter para o parágrafo */
+.conteudo::first-letter {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3498db;
+    margin-right: 5px;
+}
+
+/* Pseudo-elemento ::first-line para o parágrafo */
+.conteudo::first-line {
+    font-weight: bold;
+    color: #e74c3c;
+}
