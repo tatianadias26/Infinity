@@ -1,0 +1,24 @@
+:root {
+    --cor-fundo-cabecalho: cadetblue;
+    --cor-texto-paragrafo: black;
+    --cor-texto-cabecalho: blue;
+    --cor-fundo-pagina: yellow;
+    --cor-destaque: magenta;
+}
+
+.texto-cabecalho {
+    color: var(--cor-texto-cabecalho);
+    background-color: var(--cor-fundo-cabecalho);
+}
+
+.texto-corpo {
+    color: var(--cor-texto-paragrafo);
+}
+
+.cor-fundo {
+    background: var(--cor-fundo-pagina);
+}
+
+.destaque {
+    color: var(--cor-destaque);
+}

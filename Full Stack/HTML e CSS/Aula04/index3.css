@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+    width: 70%;
+    background-color: #F4E2DE;
+}
+
+header {
+    background-color: #025259;
+    color: #F4E2DE;
+    padding: 3%;
+}
+
+nav {
+    background-color: #007172;
+    padding: 1%;
+}
+
+nav li {
+    display: inline;
+    list-style-type: nome;    
+    margin-right: 3%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F4E2DE;
+}
+
+section {
+    margin-top: 3%;
+    background-color: #F29325;
+    padding: 3% 5%;
+}
+
+.figura1 {
+    width: 180px;
+    border: 2px solid #025259;
+    padding: 1%;    
+    border-radius: 5px;
+}
+
+.figura2 {
+    width: 140px;
+    border: 2px solid #025259;
+    padding: 1%;    
+    border-radius: 5px;
+}
+
+.figura3 {
+    width: 100px;
+    border: 2px solid #025259;
+    padding: 1%;    
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #025259;
+    text-align: center;
+    padding: 2% 0%;
+}

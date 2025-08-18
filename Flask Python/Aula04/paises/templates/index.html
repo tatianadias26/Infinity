@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Busca de CEP</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .pais-form {
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .pais-form input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      width: 200px;
+    }
+
+    .pais-form button {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .pais-form button:hover {
+      background-color: #2980b9;
+    }
+
+    .resultado {
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .resultado p {
+      margin: 10px 0;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Super App de Busca de Países Top Master 3000</h1>
+
+  <form class="pais-form" method="GET" action="/buscar">
+    <input type="text" name="nome" placeholder="Digite o nome do país" required />
+    <button type="submit">Buscar</button>
+  </form>
+
+  {% if resultado %}
+    <div class="resultado">
+      {% if resultado.success == false %}
+        <p>{{ resultado.msg }}</p>
+      {% else %}
+        <p><strong>País:</strong> {{ resultado.msg.translations.por.official}}</p>
+        <p><strong>Capital:</strong> {{ resultado.msg.capital[0] }}</p>
+        <p><strong>Idioma:</strong> {{ resultado.msg.languages }}</p>
+        <p><strong>Continente:</strong> {{ resultado.msg.subregion }}</p>
+        <p><strong>Bandeira:</strong> {{ resultado.msg.flag }}</p>
+        <p><strong>Fronteira:</strong> {{ resultado.msg.borders }}</p>        
+      {% endif %}
+    </div>
+  {% endif %}
+</body>
+</html>
+
+<!-- 
+https://restcountries.com/v3.1/name/brasil 
+https://dontpad.com/smflask/aula04
+-->

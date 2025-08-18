@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Flexbox</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+
+        .secao {
+            border: 2px solid #ddd;
+            padding: 15px;
+            margin-bottom: 25px;
+            background-color: #f9f9f9;
+        }
+
+        .flex-container {
+            /* 1. Ativa o Flexbox para o contêiner */
+            display: flex;
+            height: 150px;
+            border: 2px dashed #007bff;
+            padding: 10px;
+            
+            /* 4. Define um espaço uniforme entre os itens */
+            gap: 10px;
+        }
+
+        .flex-item {
+            width: 80px;
+            height: 80px;
+            background-color: #007bff;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0; /* Impede que os itens encolham no nowrap */
+        }
+        
+        .container-row {
+            /* 2. Direção dos itens: horizontal (padrão) */
+            flex-direction: row;
+        }
+
+        .container-column-reverse {
+            /* 2. Direção dos itens: vertical */
+            flex-direction: column-reverse;
+            height: 200px;
+        }
+
+        .container-wrap {
+            /* 3. Quebra os itens para a próxima linha */
+            flex-wrap: wrap;
+            height: auto;
+            width: 400px; /* Largura definida para forçar a quebra de linha */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exemplo Prático de Flexbox</h1>
+
+    <div class="secao">
+        <h2>flex-direction: row (padrão)</h2>
+        <p>Os itens são alinhados em uma única linha horizontal. O `gap` cria o espaçamento entre eles.</p>
+        <div class="flex-container container-row">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+            <div class="flex-item">Item 4</div>
+        </div>
+    </div>
+
+    <div class="secao">
+        <h2>flex-direction: column</h2>
+        <p>Os itens são alinhados em uma coluna vertical. O `gap` cria o espaçamento entre eles verticalmente.</p>
+        <div class="flex-container container-column-reverse">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+    </div>
+
+    <div class="secao">
+        <h2>flex-wrap: wrap</h2>
+        <p>A largura do contêiner é de 400px. Como o `flex-wrap` está ativado, os itens que não cabem na primeira linha são movidos para a linha de baixo.</p>
+        <div class="flex-container container-wrap">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+            <div class="flex-item">Item 4</div>
+            <div class="flex-item">Item 5</div>
+            <div class="flex-item">Item 6</div>
+        </div>
+    </div>
+
+</body>
+</html>

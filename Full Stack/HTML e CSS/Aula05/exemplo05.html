@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de z-index</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+
+        /* O contêiner-pai é o "contexto de empilhamento" */
+        .container {
+            position: relative; /* Isso é crucial! z-index só funciona em elementos posicionados. */
+            width: 400px;
+            height: 300px;
+            background-color: #f0f0f0;
+            border: 2px solid #333;
+            padding: 20px;
+        }
+
+        .caixa {
+            position: absolute; /* As caixas filhas também precisam ser posicionadas */
+            width: 200px;
+            height: 150px;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            line-height: 150px; /* Centraliza o texto verticalmente */
+        }
+
+        /*
+            Caixa Vermelha: z-index: 1
+            Será a camada mais baixa.
+        */
+        .caixa-vermelha {
+            background-color: #f44336;
+            left: 20px;
+            top: 20px;
+            z-index: 1;
+        }
+
+        /*
+            Caixa Azul: z-index: 2
+            Estará acima da vermelha.
+        */
+        .caixa-azul {
+            background-color: #2196f3;
+            left: 80px;
+            top: 80px;
+            z-index: 2;
+        }
+
+        /*
+            Caixa Verde: z-index: 3
+            Estará acima de todas as outras.
+        */
+        .caixa-verde {
+            background-color: #4caf50;
+            left: 140px;
+            top: 140px;
+            z-index: 3;
+        }
+        
+        /*
+            Caixa com z-index negativo.
+            Ela irá para trás do conteúdo do contêiner.
+        */
+        .caixa-negativa {
+            background-color: #ff9800;
+            width: 150px;
+            height: 100px;
+            left: 10px;
+            bottom: 10px;
+            z-index: -1;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exemplo de z-index: Controle de Camadas</h1>
+
+    <div class="container">
+        <div class="caixa caixa-negativa">z-index: -1</div>
+
+        <div class="caixa caixa-vermelha">z-index: 1</div>
+        <div class="caixa caixa-azul">z-index: 2</div>
+        <div class="caixa caixa-verde">z-index: 3</div>
+    </div>
+
+</body>
+</html>

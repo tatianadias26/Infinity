@@ -1,0 +1,105 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #EFEFF0; /* Fundo geral */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+  width: 90%;
+  max-width: 960px;
+  margin: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  grid-column: 1 / -1;
+  background-color: #0F172C; /* Cor de fundo para o cabeçalho */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+    color: #23D4EE; /* Cor do título principal */
+}
+
+.sidebar {
+  background-color: #EFEFF0; /* Cor de fundo para a barra lateral */
+  padding: 20px;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  color: #50529E; /* Cor para o título da sidebar */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: #1FA4E3; /* Cor dos links na sidebar */
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.main-content h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #0F172C; /* Cor do título principal do conteúdo */
+}
+
+.main-content h3 {
+    color: #50529E; /* Cor do título dos artigos */
+}
+
+.main-content a {
+    color: #1FA4E3; /* Cor dos links dos artigos */
+    text-decoration: none;
+}
+
+.main-content a:hover {
+    text-decoration: underline;
+}
+
+.main-content article {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #EFEFF0; /* Cor da borda entre os artigos */
+}
+
+.main-content article:last-child {
+  border-bottom: none;
+}
+
+.footer {
+  grid-column: 1 / -1;
+  background-color: #0F172C; /* Cor de fundo para o rodapé */
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.8em;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid red;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .container-horizontal {
+            display: flex;
+            width: 80%;
+        }
+        .box {
+            border: 1px solid yellow;
+            width: 80%;
+            height: 100px;
+        }
+        .red {
+            background-color: red;
+        }
+        .black {
+            background-color: black;
+        }
+        .green {
+            background-color: green;
+        }
+        .grupo {  
+            width: 15%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box red" style="display: flex; justify-content: space-between;">
+            <div class="grupo">
+                <div class="box green"></div>
+                <div class="box green"></div>
+            </div>
+            <div class="grupo">
+                <div class="box green"></div>
+                <div class="box green"></div>
+            </div>
+            <div class="grupo">
+                <div class="box green"></div>
+                <div class="box green"></div>
+            </div>            
+        </div>
+        <div class="box black"></div>
+        <div class="container-horizontal">
+            <div class="box black" style="flex: 1;"></div>
+            <div class="box black" style="flex: 3;"></div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.caixa-animada {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 50%; /* Transforma a caixa em um círculo */
+    
+    /* Aplica a animação */
+    animation-name: multi-propriedades;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/* Define a animação com múltiplos keyframes */
+@keyframes multi-propriedades {
+    0% {
+        transform: translateX(-200px) rotate(0deg);
+        background-color: #3498db;
+        opacity: 1;
+    }
+    25% {
+        transform: translateX(0) rotate(90deg);
+        background-color: #2ecc71;
+        opacity: 0.5;
+    }
+    50% {
+        transform: translateX(200px) rotate(180deg);
+        background-color: #e74c3c;
+        opacity: 1;
+    }
+    75% {
+        transform: translateX(0) rotate(270deg);
+        background-color: #f1c40f;
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(-200px) rotate(360deg);
+        background-color: #3498db;
+        opacity: 1;
+    }
+}

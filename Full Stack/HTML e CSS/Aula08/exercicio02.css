@@ -1,0 +1,222 @@
+/* Variáveis de cores */
+:root {
+    --primary-color: #2c3e50; /* Cor principal, usada para fundo e títulos */
+    --secondary-color: #3498db; /* Cor secundária, usada para links e botões */
+    --background-color: #ecf0f1; /* Cor de fundo geral da página */
+    --text-color: #34495e; /* Cor padrão para a maioria dos textos */
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif; /* Define a família da fonte */
+    margin: 0; /* Remove a margem padrão do corpo */
+    background-color: var(--background-color); /* Aplica a cor de fundo da variável */
+    color: var(--text-color); /* Aplica a cor do texto da variável */
+    line-height: 1.6; /* Define a altura das linhas para melhor leitura */
+}
+
+h2 {
+    text-align: center; /* Centraliza os títulos de nível 2 */
+    color: var(--primary-color); /* Aplica a cor principal nos títulos */
+    margin-bottom: 40px; /* Adiciona uma margem inferior para separar do conteúdo */
+    font-size: 2.5rem; /* Define o tamanho da fonte */
+}
+
+section {
+    padding: 80px 20px; /* Adiciona espaçamento interno nas seções */
+    max-width: 1200px; /* Define uma largura máxima para as seções */
+    margin: 0 auto; /* Centraliza as seções na página */
+}
+
+/* Header e Navegação (Flexbox) */
+.header {
+    background-color: var(--primary-color); /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto no cabeçalho */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.navbar {
+    display: flex; /* Ativa o Flexbox no menu de navegação */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Ativa o Flexbox para alinhar os links em linha */
+    gap: 20px; /* Adiciona espaçamento entre os links */
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transição suave na cor do texto */
+}
+
+.nav-links a:hover {
+    color: var(--secondary-color); /* Muda a cor no hover */
+}
+
+/* Seção Sobre Mim (Flexbox) */
+.about-me {
+    display: flex; /* Ativa o Flexbox para alinhar a biografia e a foto */
+    align-items: center;
+    gap: 40px; /* Espaçamento entre os itens */
+}
+
+.bio {
+    flex: 1; /* Faz a biografia ocupar o espaço disponível */
+}
+
+.profile-pic {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-pic img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* Transforma a imagem em um círculo */
+    object-fit: cover; /* Recorta a imagem para preencher o círculo sem distorcer */
+    border: 5px solid var(--primary-color);
+}
+
+.cta-button {
+    display: inline-block; /* Permite que o botão tenha padding e margem */
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+
+/* Seções de Habilidades e Projetos (Grid) */
+.skills-grid, .projects-grid {
+    display: grid; /* Ativa o Grid Layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Colunas flexíveis e responsivas */
+    gap: 20px; /* Espaçamento entre os itens do grid */
+}
+
+.skill-card, .project-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease; /* Transição para o efeito de hover */
+}
+
+.skill-card:hover, .project-card:hover {
+    transform: translateY(-10px); /* Move o card para cima no hover */
+}
+
+.skill-card i {
+    font-size: 3rem;
+    color: var(--secondary-color);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Seção de Contato */
+.contact-section {
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura */
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+.social-links a {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column; /* Em telas menores, a biografia e a foto se empilham */
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

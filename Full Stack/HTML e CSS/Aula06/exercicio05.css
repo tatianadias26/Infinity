@@ -1,0 +1,57 @@
+/*
+  Estilos Padrão para Desktops (acima de 600px)
+*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.texto {
+    font-size: 18px; /* Tamanho da fonte padrão */
+    color: #333;
+    line-height: 1.6;
+}
+
+.botao {
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff; /* Cor padrão do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #0056b3;
+}
+
+/*
+  Media Query para Dispositivos Móveis (largura máxima de 599px)
+*/
+@media (max-width: 599px) {
+    .texto {
+        font-size: 16px; /* Aumenta a fonte para dispositivos móveis */
+    }
+
+    .botao {
+        background-color: #28a745; /* Muda a cor do botão para verde */
+        padding: 10px 20px; /* Ajusta o padding para telas menores */
+    }
+}

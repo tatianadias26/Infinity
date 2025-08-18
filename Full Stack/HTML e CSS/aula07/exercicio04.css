@@ -1,0 +1,78 @@
+/*
+  Definição das Variáveis Globais de Cores
+*/
+:root {
+    --cor-fundo-principal: #f0f2f5;   
+    --cor-texto-padrao: #333333;      
+    --cor-destaque: #007bff;          
+    --cor-secundaria: #6c757d;       
+}
+
+/*
+  Aplicação das Variáveis de Cores aos Elementos
+*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo-principal); 
+    color: var(--cor-texto-padrao);              
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.conteudo-principal {
+    background-color: #ffffff; 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    text-align: center;
+}
+
+h1 {
+    color: var(--cor-destaque); 
+    margin-bottom: 15px;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: var(--cor-secundaria); 
+    margin-bottom: 25px;
+    font-size: 1.5em;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.link-destaque {
+    color: var(--cor-destaque); 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.link-destaque:hover {
+    color: #0056b3; 
+}
+
+.btn-destaque {
+    background-color: var(--cor-destaque); 
+    color: #ffffff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-destaque:hover {
+    background-color: #0056b3; 
+}

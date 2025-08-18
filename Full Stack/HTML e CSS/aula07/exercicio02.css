@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.caixa {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 8px;
+    
+    /* Aplica a animação */
+    animation-name: mover-para-direita;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/* Define a animação */
+@keyframes mover-para-direita {
+    0% {
+        transform: translateX(0); /* Posição inicial */
+    }
+    100% {
+        transform: translateX(600px); /* Posição final */
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise e Combinação de Exemplos</title>
+    <link rel="stylesheet" href="exercicio01.css">
+</head>
+<body>
+
+    <h1>Análise e Combinação dos Exemplos de Display e Visibility</h1>
+
+    <div class="secao">
+        <h2>Elementos com display: block e inline</h2>
+        <p>Os elementos de bloco ocupam a largura total, enquanto os elementos de linha ficam lado a lado.</p>
+        <div class="bloco">Este é um elemento de bloco.</div>
+        <div class="bloco">Este é outro elemento de bloco.</div>
+        <hr>
+        <span class="linha">Este é um elemento de linha.</span>
+        <span class="linha">Este é outro elemento de linha.</span>
+    </div>
+
+    <div class="secao">
+        <h2>Elementos com display: inline-block</h2>
+        <p>Essas caixas combinam as características de inline (flutuam lado a lado) e block (possuem largura e altura definidas).</p>
+        <div class="caixa-inline-bloco">Caixa 1</div>
+        <div class="caixa-inline-bloco">Caixa 2</div>
+        <div class="caixa-inline-bloco">Caixa 3</div>
+    </div>
+
+    <div class="secao">
+        <h2>Comparando display: none e visibility: hidden</h2>
+        <p>O `display: none` remove o elemento completamente, enquanto `visibility: hidden` apenas o esconde, mantendo seu espaço.</p>
+
+        <h3>Com `display: none`</h3>
+        <div class="caixa-visibilidade">Caixa 1</div>
+        <div class="caixa-visibilidade escondido-display">Caixa 2 (display: none)</div>
+        <div class="caixa-visibilidade">Caixa 3</div>
+        
+        <hr>
+        
+        <h3>Com `visibility: hidden`</h3>
+        <div class="caixa-visibilidade">Caixa 1</div>
+        <div class="caixa-visibilidade escondido-visibility">Caixa 2 (visibility: hidden)</div>
+        <div class="caixa-visibilidade">Caixa 3</div>
+    </div>
+
+</body>
+</html>

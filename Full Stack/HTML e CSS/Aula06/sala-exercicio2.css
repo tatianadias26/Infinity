@@ -1,0 +1,20 @@
+.galeria-imagens {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 10px;
+}
+
+.galeria-imagens img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  box-shadow: 5px 5px black;
+}
+
+.content::first-letter {
+  font-size: 68px;
+  font-weight: bolder;
+}

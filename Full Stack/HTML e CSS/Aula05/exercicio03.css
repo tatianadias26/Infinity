@@ -1,0 +1,37 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 1. Estilo para o cabeçalho fixo */
+.header-fixo {
+    position: fixed; /* O cabeçalho fica grudado no topo da tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 10; /* Valor de z-index baixo, para que outros elementos possam sobrepô-lo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 2. Estilo para a imagem grande */
+.imagem-container {
+    position: relative; /* O contêiner da imagem tem um z-index para empilhamento */
+    margin-top: 130px; /* Um valor igual à altura do cabeçalho para evitar a sobreposição inicial */
+    z-index: 20; /* Valor de z-index mais alto que o do cabeçalho */
+}
+
+.imagem-container img {
+    width: 90%;
+    display: block;
+}
+
+/* 3. Estilo para o conteúdo de rolagem */
+.conteudo {
+    padding: 20px;
+    background-color: #f4f4f4;
+}

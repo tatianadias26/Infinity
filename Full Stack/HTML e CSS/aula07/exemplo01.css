@@ -1,0 +1,61 @@
+:root {
+    /* Cores que você pediu */
+    --cor-ativa: #007bff; /* Azul para a caixa ativa */
+    --cor-fundo: #2c3e50; /* Cor de fundo do body */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--cor-fundo);
+    overflow: hidden;
+}
+
+.animation-container {
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    background-color: var(--cor-ativa); /* Todas as caixas começam azuis */
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    opacity: 1; /* Todas as caixas começam visíveis */
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Define a animação para a caixa desaparecer */
+@keyframes desaparecer {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Aplica a animação para cada caixa com um atraso */
+.box-1 {
+    animation: desaparecer 0.5s forwards 1s; /* Desaparece após 1s */
+}
+
+.box-2 {
+    animation: desaparecer 0.5s forwards 2s; /* Desaparece após 2s */
+}
+
+.box-3 {
+    animation: desaparecer 0.5s forwards 3s; /* Desaparece após 3s */
+}
+
+.box-4 {
+    animation: desaparecer 0.5s forwards 4s; /* Desaparece após 4s */
+}
+
+.box-5 {
+    animation: desaparecer 0.5s forwards 5s; /* Desaparece após 5s */
+}

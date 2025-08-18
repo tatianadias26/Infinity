@@ -1,0 +1,32 @@
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #d8f7ca;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 200px;            
+            border: 2px dashed #05f02c;
+            background-color: white;
+            gap: 15px; 
+            padding: 10px;
+        }
+
+        .flex-item {
+            width: 100px;
+            height: 100px;
+            background-color: #05f02c;
+            color: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }

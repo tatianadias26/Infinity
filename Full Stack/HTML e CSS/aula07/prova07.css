@@ -1,0 +1,74 @@
+/*
+  Estilos Padrão (Móvel) - aplicados em telas de até 600px
+*/
+:root {
+    --tamanho-h1: 1.5rem;
+    --tamanho-h2: 1.1rem;
+    --tamanho-p: 0.8rem;
+    --espacamento-vertical: 10px;
+    --espacamento-horizontal: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: var(--espacamento-horizontal);
+}
+
+.container {
+    background-color: #fff;
+    padding: var(--espacamento-horizontal);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    text-align: center;
+}
+
+h1 {
+    font-size: var(--tamanho-h1);
+    margin-bottom: var(--espacamento-vertical);
+    color: #007bff;
+}
+
+h2 {
+    font-size: var(--tamanho-h2);
+    margin-bottom: var(--espacamento-vertical);
+    color: #6c757d;
+}
+
+p {
+    font-size: var(--tamanho-p);
+    line-height: 1.6;
+}
+
+/*
+  Media Query para Tablets e Notebooks
+*/
+@media (min-width: 601px) and (max-width: 1023px) {
+    :root {
+        --tamanho-h1: 1.8rem;
+        --tamanho-h2: 1.2rem;
+        --tamanho-p: 0.9rem;
+        --espacamento-vertical: 15px;
+    }
+}
+
+/*
+  Media Query para Desktops
+*/
+@media (min-width: 1024px) {
+    :root {
+        --tamanho-h1: 2.2rem;
+        --tamanho-h2: 1.5rem;
+        --tamanho-p: 1.1rem;
+        --espacamento-vertical: 20px;
+        --espacamento-horizontal: 30px;
+    }
+}

@@ -1,0 +1,40 @@
+@keyframes mover-e-colorir {
+    /* Estado inicial da animação (0%) */
+    0% {
+        transform: translateX(0);
+        background-color: #3498db;
+    }
+    
+    /* Estado intermediário (50%) */
+    50% {
+        transform: translateX(400px); /* Move 400px para a direita */
+        background-color: #e74c3c; /* Muda para a cor vermelha */
+    }
+    
+    /* Estado final da animação (100%) */
+    100% {
+        transform: translateX(0);
+        background-color: #3498db;
+    }
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.caixa-animada {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    
+    /* Aplica a animação */
+    animation-name: mover-e-colorir;
+    animation-duration: 4s; /* Duração de 4 segundos */
+    animation-timing-function: ease-in-out; /* Começa e termina suavemente */
+    animation-iteration-count: infinite; /* Repete infinitamente */
+}

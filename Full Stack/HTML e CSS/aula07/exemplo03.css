@@ -1,0 +1,61 @@
+/*
+  Definição das Variáveis Globais
+*/
+:root {
+    --cor-primaria: #007bff;
+    --cor-secundaria: #343a40;
+    --cor-fundo: #f8f9fa;
+    --tamanho-fonte-padrao: 16px;
+    --espacamento-padrao: 20px;
+    --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*
+  Aplicação dos Estilos
+*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-secundaria);
+    font-size: var(--tamanho-fonte-padrao);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: var(--espacamento-padrao);
+    border-radius: 8px;
+    box-shadow: var(--sombra);
+    text-align: center;
+    max-width: 600px;
+}
+
+h1 {
+    color: var(--cor-primaria);
+    font-size: calc(var(--tamanho-fonte-padrao) * 1.8);
+    margin-bottom: var(--espacamento-padrao);
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: var(--espacamento-padrao);
+}
+
+.btn {
+    background-color: var(--cor-primaria);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: var(--tamanho-fonte-padrao);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--cor-secundaria);
+}
