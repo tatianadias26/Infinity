@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correção - Resultado na Tela</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Resumo do Carrinho de Compras</h1>
+        
+        <pre id="resultado"></pre>
+
+    </div>
+
+    <script>
+        // A lógica de cálculo permanece a mesma.
+        const nomeProduto = "Açaí de 500ml com Morango";
+        let precoUnitario = 22.50;
+        let quantidade = 2;
+        const emEstoque = true;
+
+        // --- MUDANÇA PRINCIPAL COMEÇA AQUI ---
+
+        // PASSO 2: Em vez de usar console.log, vamos construir uma única string (texto) com todo o resultado.
+        let textoResultado = ""; // Começamos com um texto vazio
+
+        textoResultado += "--- Detalhes do Pedido ---\n";
+        textoResultado += `Produto: ${nomeProduto}\n`;
+        textoResultado += `Preço por unidade: R$ ${precoUnitario.toFixed(2)}\n`;
+        textoResultado += `Quantidade: ${quantidade}\n`;
+        textoResultado += `Disponível: ${emEstoque ? "Sim" : "Não"}\n`;
+        textoResultado += "----------------------------\n\n";
+
+        // Cálculos
+        let subtotal = precoUnitario * quantidade;
+        let valorDoDesconto = 5.00;
+        let totalComDesconto = subtotal - valorDoDesconto;
+        let taxaDeEntrega = 7.00;
+        let totalAPagar = totalComDesconto + taxaDeEntrega;
+        
+        textoResultado += "--- Cálculo do Pagamento ---\n";
+        textoResultado += `Subtotal (${quantidade} x R$${precoUnitario.toFixed(2)}): R$${subtotal.toFixed(2)}\n`;
+        textoResultado += `Desconto aplicado: -R$${valorDoDesconto.toFixed(2)}\n`;
+        textoResultado += `Taxa de entrega: +R$${taxaDeEntrega.toFixed(2)}\n`;
+        textoResultado += "----------------------------\n";
+        textoResultado += `\nValor Total a Pagar: R$${totalAPagar.toFixed(2)}\n`;
+
+        // PASSO 3: Agora, conectamos o JavaScript ao HTML para exibir o resultado.
+        
+        // Pega o elemento HTML que criamos (com id="resultado").
+        const elementoResultado = document.getElementById("resultado");
+
+        // Coloca todo o nosso texto construído dentro daquele elemento.
+        elementoResultado.textContent = textoResultado;
+
+    </script>
+
+</body>
+</html>

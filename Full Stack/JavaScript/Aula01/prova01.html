@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+</head>
+<body>
+    <h1>Calculadora Simples</h1>
+    <p>Os resultados das operações serão exibidos no console do navegador.</p>
+    <p>Pressione F12 e clique na aba "Console" para visualizar.</p>
+
+    <script>
+
+        const numero1 = parseFloat(prompt("Digite o primeiro número:"));
+        const numero2 = parseFloat(prompt("Digite o segundo número:"));
+
+        console.log("-----------------------------------------");
+        console.log(`Números fornecidos: ${numero1} e ${numero2}`);
+        console.log("-----------------------------------------");
+
+        console.log("\n--- Operações Aritméticas Básicas ---");
+        const adicao = numero1 + numero2;
+        const subtracao = numero1 - numero2;
+        const multiplicacao = numero1 * numero2;
+        const divisao = numero1 / numero2;
+        const resto = numero1 % numero2;
+
+        console.log(`${numero1} + ${numero2} = ${adicao}`);
+        console.log(`${numero1} - ${numero2} = ${subtracao}`);
+        console.log(`${numero1} * ${numero2} = ${multiplicacao}`);
+        console.log(`${numero1} / ${numero2} = ${divisao}`);
+        console.log(`O resto da divisão de ${numero1} por ${numero2} é: ${resto}`);
+        console.log("-----------------------------------------");
+
+        console.log("\n--- Demonstração com Operadores de Atribuição ---");
+        let resultado = numero1;
+        console.log(`Valor inicial da variável 'resultado': ${resultado}`);
+
+        resultado += numero2;
+        console.log(`Após somar ${numero2} (usando +=), o resultado é: ${resultado}`);
+
+        resultado -= 3;
+        console.log(`Após subtrair 3 (usando -=), o resultado é: ${resultado}`);
+
+        resultado *= 2;
+        console.log(`Após multiplicar por 2 (usando *=), o resultado é: ${resultado}`);
+        
+        resultado /= 4;
+        console.log(`Após dividir por 4 (usando /=), o resultado é: ${resultado}`);
+
+        resultado %= 2;
+        console.log(`Após o resto da divisão por 2 (usando %=), o resultado é: ${resultado}`);
+
+        console.log("-----------------------------------------");
+
+    </script>
+</body>
+</html>
