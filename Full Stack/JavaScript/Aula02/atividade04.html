@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Ideal</title>
+</head>
+<body>
+    <p>Os resultados das operações serão exibidos no console do navegador.</p>
+    <p>Pressione F12 e clique na aba "Console" para visualizar.</p> 
+
+    <script>
+        let numero1 = parseFloat(prompt("Digite um número:"));
+        let numero2 = parseFloat(prompt("Digite outro número:"));
+
+        // 1. Valida os números digitados
+        if (isNaN(numero1) || isNaN(numero2)) {
+            alert("Erro: Um ou ambos os valores digitados não são números válidos.");
+            console.error("Entrada inválida detectada. O programa foi encerrado.");
+        } else {
+            // Continua se os números são válidos
+            let operacao = prompt("Informe a operação desejada (+, -, *, /):");
+            let resultado;
+
+            console.log(`Números digitados: ${numero1} e ${numero2}`);
+            console.log(`Operação solicitada: ${operacao}`);
+            
+            // 2. Realiza a opercao
+            switch (operacao) {
+                case "+": 
+                    resultado = numero1 + numero2;
+                    break;
+                case "-": 
+                    resultado = numero1 - numero2;
+                    break;
+                case "*": 
+                    resultado = numero1 * numero2;
+                    break;
+                case "/": 
+                    if (numero2 !== 0) {
+                        resultado = numero1 / numero2;
+                    } else {
+                        resultado = "Erro: Divisão por zero!";
+                    }
+                    break;
+                default: // Quando for digitada uma Operação inválida
+                    resultado = "Operação inválida ou não reconhecida.";
+                    break;
+            }
+
+            console.log(`Resultado: ${resultado}`);
+        }
+    </script>
+</body>
+</html>

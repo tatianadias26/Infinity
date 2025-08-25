@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Os resultados das operações serão exibidos no console do navegador.</p>
+    <p>Pressione F12 e clique na aba "Console" para visualizar.</p>    
+
+    <script>
+
+        // 1. Solicita dois números ao usuário e armazena nas variáveis
+        let numero1 = parseFloat(prompt("Digite um número:"));
+        let numero2 = parseFloat(prompt("Digite outro número:"));
+
+        // 2. Realiza as verificações lógicas
+        let ambosSaoPositivos = (numero1 > 0) && (numero2 > 0);
+        let peloMenosUmPositivo = (numero1 > 0) || (numero2 > 0);
+        let nenhumPositivo = !(peloMenosUmPositivo);
+
+        // 3. Exibe os resultados no console
+        console.log("--- Análise dos Números ---");
+        console.log(`Número 1: ${numero1}`);
+        console.log(`Número 2: ${numero2}`);
+        console.log("----------------------------");
+        console.log("Ambos os números são positivos? ", ambosSaoPositivos);
+        console.log("Pelo menos um dos números é positivo? ", peloMenosUmPositivo);
+        console.log("Nenhum dos números é positivo? ", nenhumPositivo);
+
+    </script>
+</body>
+</html>

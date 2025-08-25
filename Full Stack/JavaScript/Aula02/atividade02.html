@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>Os resultados das operações serão exibidos no console do navegador.</p>
+    <p>Pressione F12 e clique na aba "Console" para visualizar.</p>    
+
+    <script>
+        // 1. Solicita dois números ao usuário e armazena nas variáveis
+        let numero1 = parseFloat(prompt("Digite um número:"));
+        let numero2 = parseFloat(prompt("Digite outro número:"));
+
+        // 2. Operações de comparação
+
+        // 2. Exibe os números inseridos para conferência
+        console.log("--- Análise de Comparação ---");
+        console.log(`Os números a serem comparados são: ${numero1} e ${numero2}`);
+        console.log("-------------------------------");
+
+                // 3. Utiliza os operadores e exibe os resultados
+        
+        // Igualdade (compara apenas o valor, pode converter tipos)
+        console.log(`'${numero1}' == '${numero2}' (Igual a):`, numero1 == numero2);
+        
+        // Igualdade Estrita (compara o valor E o tipo, sem converter)
+        console.log(`'${numero1}' === '${numero2}' (Estritamente igual a):`, numero1 === numero2);
+
+        // Diferença (compara apenas o valor)
+        console.log(`'${numero1}' != '${numero2}' (Diferente de):`, numero1 != numero2);
+
+        // Diferença Estrita (compara o valor E o tipo)
+        console.log(`'${numero1}' !== '${numero2}' (Estritamente diferente de):`, numero1 !== numero2);
+
+        // Maior que
+        console.log(`'${numero1}' > '${numero2}' (Maior que):`, numero1 > numero2);
+
+        // Menor que
+        console.log(`'${numero1}' < '${numero2}' (Menor que):`, numero1 < numero2);
+
+        // Maior ou igual a
+        console.log(`'${numero1}' >= '${numero2}' (Maior ou igual a):`, numero1 >= numero2);
+
+        // Menor ou igual a
+        console.log(`'${numero1}' <= '${numero2}' (Menor ou igual a):`, numero1 <= numero2);
+    </script>
+
+    </script>
+</body>
+
+
+</html>
