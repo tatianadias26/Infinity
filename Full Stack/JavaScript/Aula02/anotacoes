@@ -1,0 +1,48 @@
+https://dontpad.com/inf509-2025/javascript/aula02
+
+
+** condicionais-if **
+
+const numero = parseFloat(prompt("Digite um número: "))
+
+if (isNaN(numero)) {
+    alert("O valor deve ser um número!")
+} else if (numero >= 0 && numero <= 100) {
+    alert("O número é válido!")
+} else {
+    alert("O número é inválido!")
+}
+
+
+** ex01 **
+
+// CRIE UM PROGRAMA QUE PEÇA UM NÚMERO AO USUÁRIO E EXIBA SE ELE É PAR OU IMPAR
+
+const numero = parseFloat(prompt("Digite um número: "))
+
+if (numero % 2 === 0) {
+    alert("PAR")
+} else {
+    alert("IMPAR")
+}
+
+
+** operaddores-logicas **
+
+const condicao1 = true
+const condicao2 = true
+
+const e = condicao1 && condicao2
+const ou = condicao1 || condicao2
+const nao = !texto
+
+// truthy - Equivalente a true
+1, "a", {}, [], true
+
+// falsy - Equivalente a false
+0, "", null, undefined, NaN, false
+
+
+const nome = prompt("Digite o seu nome: ") || "Sem nome"
+
+nome && alert("Falando alguma coisa")

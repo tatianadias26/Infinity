@@ -1,0 +1,48 @@
+https://dontpad.com/inf509-2025/javascript/revisao01
+
+REVISÃO DE INTRODUÇÃO AO JAVASCRIPT
+
+** aula **
+
+"Meu texto" // Strings - Textos
+true || false // Boolean - Lógicos
+32.4 // Number  - Números
+null // Null    - Vázio intencional
+undefined // Undefined - Vázio não-intencional
+
+variavelGlobal = "Variável global"
+var minhaVariavel = "Variável com escopo em função"
+let variavelLet = "Variável com escopo em bloco"
+const variavelConst = "Variável constante"
+
+const texto = prompt("Digite alguma coisa: ")
+
+alert(`O texto digitado foi: ${texto}.`)
+console.log(texto)
+document.writeln(texto)
+
+const soma = 5 + 2
+const concatenacao = "5" + 2 // "52"
+const subtracao = 5 - 2
+const multiplicao = 5 * 2
+const potencia = 5 ** 2
+const divisao = 5 / 2
+const restoDaDivisao = 5 % 2
+
+
+** ex01 **
+
+// CRIE UM PROGRAMA QUE PEÇA O NOME E O ANO DE NASCIMENTO DO USUÁRIO.
+// EXIBA COMO UMA MENSAGEM PERSONALIZADA O NOME E A IDADE DO USUÁRIO.
+
+const nome = prompt("Digite o seu nome: ")
+const anoNascimento = parseInt(prompt("Digite o seu ano de nascimento: "))
+
+// Gera um objeto do tipo "Date" com a data atual
+const dataAtual = new Date()
+// Pega o ano da data
+const anoAtual = dataAtual.getFullYear()
+
+const idade = anoAtual - anoNascimento
+
+alert(`O usuário ${nome} tem ${idade} anos.`)
