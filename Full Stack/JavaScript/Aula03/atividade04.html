@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de Números</title>
+</head>
+<body>
+    <script>
+        let numeroInicial = 1;
+        let numeroFinal = parseInt(prompt("Esta aplicação soma os número dento de um intervalor que inicia em 1. Digite o número final:"));
+        
+        let soma = 0;
+
+        while (numeroInicial <= numeroFinal) {
+            soma += numeroInicial;
+            numeroInicial++;
+        }
+
+        alert(`A soma dos números de 1 até ${numeroFinal} é ${soma}.`);
+    </script>
+</body>
+</html>

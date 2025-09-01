@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 06</title>
+</head>
+<body>
+
+    <p>O resultado será exibido no console do navegador.</p>
+    <p>Pressione F12 e clique na aba "Console" para visualizar.</p> 
+
+    <script>
+        const palavraOuFrase = prompt("Por favor, digite uma palavra ou frase:");
+
+        if (palavraOuFrase) {
+            
+            console.log(`--- Caracteres da entrada: "${palavraOuFrase}" ---`);
+
+            for (const caractere of palavraOuFrase) {
+                console.log(caractere);
+            }
+
+        } else {
+            console.log("Nenhuma palavra ou frase foi digitada.");
+        }
+    </script>
+</body>
+</html>
