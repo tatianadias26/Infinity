@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 02</title>
+</head>
+<body>
+
+    <p>Os resultados das operações serão exibidos no console do navegador.</p>
+    <p>Pressione F12 e clique na aba "Console" para visualizar.</p>    
+
+    <script>
+        let idade = parseInt(prompt("Informe a sua idade:"));
+        let statusRegistro = prompt("Informe o status de registro (registrado ou não registrado):");
+        
+        console.log(`Idade: ${idade}`);
+        console.log(`Status de Registro: ${statusRegistro}`);
+
+        let statusIdade = (idade >= 18) ? "Maior de idade" : "Menor de idade";
+        console.log(`Status de Idade: ${statusIdade}`);
+
+        let resultado;
+        switch (statusRegistro) {
+            case "registrado": 
+                resultado = "Bem-vindo!";
+                break;
+            case "não registrado": 
+                resultado = "Por favor, complete seu registro.";
+                break;
+            default: 
+                resultado = "Status desconhecido.";
+                break;
+        }
+
+        console.log(`Mensagem de Status: ${resultado}`);
+
+        if (idade >= 18 && statusRegistro === "registrado") {
+            console.log("Acesso completo concedido.");  
+        } else { 
+            console.log("Acesso limitado.");
+        } 
+        
+    </script>
+
+</body>
+</html>
