@@ -1,19 +1,15 @@
-// CRIE UM PROGRAMA QUE PEÇA UMA FRASE AO USUÁRIO E VERIFIQUE SE ELA É UM PALINDROMO
+// CRIE UM PROGRAMA QUE PEÇA UMA FRASE AO USUÁRIO E VERIFIQUE SE ELA É UM PALÍNDROMO
 
-const palavra = prompt("Digite uma palavra para verificar se é um palíndromo:");
+const frase = prompt("Digite uma frase: ")
 
-if (palavra) {
-  let palavraInvertida = '';
+let fraseInversa = ""
 
-  for (let letra of palavra) {
-    palavraInvertida = letra + palavraInvertida;
-  }
+for (let caractere of frase.toLowerCase().replaceAll(" ", "")) {
+    fraseInversa = caractere + fraseInversa
+}
 
-  if (palavra === palavraInvertida) {
-    alert(`"${palavra}" é um palíndromo!`);
-  } else {
-    alert(`"${palavra}" não é um palíndromo.`);
-  }
+if (fraseInversa === frase.toLowerCase().replaceAll(" ", "")) {
+    alert("É um palíndromo!")
 } else {
-  alert("Nenhuma palavra fornecida.");
+    alert("Não é um palíndromo!")
 }
