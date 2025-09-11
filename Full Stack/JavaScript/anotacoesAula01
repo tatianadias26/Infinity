@@ -1,0 +1,73 @@
+// MÓDULO DE JAVASCRIPT - https://dontpad.com/inf509-2025/javascript/
+
+// Aula 01 - Aula de introdução ao Javascript
+
+// *** Entrada de dados ***
+// const nome = prompt("Digite seu nome: ")
+// alert(nome)
+
+
+// *** Saída de dados ***
+// alert("Alerta")
+// console.log("Exibir no console")
+// document.writeln("Escreve no html")
+
+
+// *** Tipos primitivos ***
+// "Meu texto" // Strings - Textos
+// 1_000_000_000.53 // Numbers - Números
+// true // Boolean - Verdadeiro | Booleanos - valores lógicos
+// false // Boolean - False | Booleanos - valores lógicos
+// null // Null | Nulo - Vazio intencional
+// undefined // Undefined | Indefinido - Vazio não intencional
+
+
+// *** Variáveis ***
+// VARIAVEL GLOBAL
+// CPF = "11122233344"
+
+// VARIAVEL COM ESCOPO EM FUNÇÃO
+// var cpf = "11122233344"
+// alert(cpf)
+
+// cpf = "22233344455"
+// alert(cpf)
+
+// VARIAVEL COM ESCOPO EM BLOCO
+// {
+//    let cpf = "11122233344"
+// }
+
+// alert(cpf)
+
+// VARIAVEL CONSTANTE COM ESCOPO EM BLOCO
+// const cpf = "11122233344"
+// cpf = "22233344455"
+// alert(cpf)
+
+
+// *** Operadores aritméticos ***
+// soma = 5 + 2
+// concatenacao = "a" + 1 // "a1"
+// concatenacaoDeNumeros = "1" + "2" // "12"
+// subtracao = 5 - 2
+// multiplicacao = 5 * 2
+// potencia = 5 ** 2
+// divisao = 5 / 2
+// restoDaDivisao = 5 % 2
+
+
+// *** Exeecício 01 ***
+
+// // CRIE UM PROGRAMA QUE PEÇA DOIS NÚMEROS AO USUÁRIO E IMPRIMA A SOMA DESSES DOIS NÚMEROS.
+
+// const numero1 = parseFloat(prompt("Digite o primeiro número: "))
+// const numero2 = parseFloat(prompt("Digite o segundo número: "))
+
+// const total = numero1 + numero2
+
+// // alert("A soma de " + numero1 + " com " + numero2 + " é igual a " + total + ".")
+// alert(`A soma de ${numero1} com ${numero2} é igual a ${total}.`)
+
+
+

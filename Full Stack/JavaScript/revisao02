@@ -1,0 +1,62 @@
+// const numero = 5
+
+// 5 > 5
+// 5 >= 5
+// 5 < 5
+// 5 <= 5
+
+// "5" == 5
+// "5" === 5
+// "5" != 5
+// "5" !== 5
+
+
+// numero >= 0 && numero <= 100
+// numero < 0 || numero > 100
+// !true
+
+// const resultado = "" && 1
+
+
+// if (condicao) {
+//     ...codigoSeVerdadeiro
+// } else if (outraCondicao) {
+//     ...codigoOutraCondicao
+// } else if (outraCondicao) {
+//     ...codigoOutraCondicao
+// } else if (outraCondicao) {
+//     ...codigoOutraCondicao
+// } else {
+//     ...codigoSeFalso
+// }
+
+// const par = numero % 2 === 0
+
+// const resultado = par ? "PAR" : "IMPAR"
+
+// const nivelDePrioridade = 1
+
+// if (nivelDePrioridade === 1) {
+//     alert("Sem urgência")
+// } else if (nivelDePrioridade === 2) {
+//     alert("Pouca urgência")
+// } else if (nivelDePrioridade === 3) {
+//     alert("Urgente")
+// } else {
+//     alert("Nível inválido!")
+// }
+
+// switch (nivelDePrioridade) {
+//     case 1:
+//         alert("Sem urgência")
+//         break
+//     case 2:
+//         alert("Pouca urgência")
+//         break
+//     case 3:
+//         alert("Urgente")
+//         break
+//     default:
+//         alert("Nível inválido!")
+//         break
+// }

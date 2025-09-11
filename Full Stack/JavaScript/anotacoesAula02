@@ -1,0 +1,109 @@
+// https://dontpad.com/inf509-2025/javascript/aula02
+
+
+// ** condicionais-if **
+
+// const numero = parseFloat(prompt("Digite um número: "))
+
+// if (isNaN(numero)) {
+//     alert("O valor deve ser um número!")
+// } else if (numero >= 0 && numero <= 100) {
+//     alert("O número é válido!")
+// } else {
+//     alert("O número é inválido!")
+// }
+
+
+// ** operaddores-logicas **
+
+// const condicao1 = true
+// const condicao2 = true
+
+// const e = condicao1 && condicao2
+// const ou = condicao1 || condicao2
+// const nao = !texto
+
+// // truthy - Equivalente a true
+// 1, "a", {}, [], true
+
+// // falsy - Equivalente a false
+// 0, "", null, undefined, NaN, false
+
+
+// const nome = prompt("Digite o seu nome: ") || "Sem nome"
+
+// nome && alert("Falando alguma coisa")
+
+
+/// *** Operadores de comparação ***
+
+// const igualdadeAbstrata = "5" == 5 // true
+// const igualdadeEstrita = "5" === 5 // false
+// const diferencaAbstrata = "5" != 5 // false
+// const diferencaEstrita = "5" !== 5 // true
+
+// const maiorQue = 5 > 5 // false
+// const maiorOuIgualQue = 5 >= 5 // true
+// const menorQue = 5 < 5 // false
+// const menorOuIgualQue = 5 <= 5 // true
+
+
+// *** Switch ***
+
+// const prioridade = parseInt(prompt("Digite o seu nível de prioridade: "))
+
+// if (prioridade === 0) {
+//     alert("BÁSICO")
+// } else if (prioridade === 1) {
+//     alert("URGENTE")
+// } else if (prioridade === 2) {
+//     alert("ALTA URGÊNCIA!")
+// } else {
+//     alert("PRIORIDADE INVÁLIDA!")
+// }
+
+// switch (prioridade) {
+//     case 0:
+//         alert("BÁSICO")
+//         break
+//     case 1:
+//         alert("URGENTE")
+//         break
+//     case 2:
+//         alert("ALTA URGÊNCIA!")
+//         break
+//     default:
+//         alert("PRIORIDADE INVÁLIDA!")
+//         break
+// }
+
+
+// *** Operador ternario ***
+// const numero = 6
+
+// const par = numero % 2 === 0
+
+// // let textoParOuImpar
+
+// // if (par) {
+// //     textoParOuImpar = "PAR"
+// // } else {
+// //     textoParOuImpar = "IMPAR"
+// // }
+
+// const textoParOuImpar = par ? "PAR" : "IMPAR"
+
+
+
+
+// ** Exercício 01 **
+
+// // CRIE UM PROGRAMA QUE PEÇA UM NÚMERO AO USUÁRIO E EXIBA SE ELE É PAR OU IMPAR
+
+// const numero = parseFloat(prompt("Digite um número: "))
+
+// if (numero % 2 === 0) {
+//     alert("PAR")
+// } else {
+//     alert("IMPAR")
+// }

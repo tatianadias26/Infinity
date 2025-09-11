@@ -1,0 +1,71 @@
+// // LAÇOS DE REPETIÇÃO
+
+// // *** FOR ***
+
+// // let contador = 0
+
+// // while (contador < 4) {
+// //     alert(contador)
+
+// //     contador++
+// // }
+
+
+// // for (let contador = 0; contador < 4; contador++) {
+// //     alert(contador)
+// // }
+
+// // let texto = "abobora"
+
+// // for (let i = 0; i < texto.length; i++) {
+// //     alert(texto[i])
+// // }
+
+// for (let letra of texto) {
+//     alert(letra)
+// }
+
+// alert(prompt("Digite um texto: ").toLowerCase())
+
+
+// // *** while ***
+
+// let contador = 0
+
+// while (contador < 4) {
+//     alert(contador)
+
+//     contador++
+// }
+
+// // *** Exercício 01 ***
+// // CRIE UM PROGRAMA QUE PEÇA UM NÚMERO POSITIVO AO USUÁRIO E EXIBA UMA CONTAGEM REGRESSIVA DESSE NÚMERO ATÉ 0.
+
+// let numero = parseInt(prompt("Digite um número: "))
+
+// while (numero >= 0) {
+//     alert(numero)
+//     numero--
+// }
+
+
+// // *** Exercício 02 ***
+// // CRIE UM PROGRAMA QUE PEÇA UM TEXTO AO USUÁRIO E EXIBA A QUANTIDADE DE VOGAIS PRESENTES NESSE TEXTO
+
+// const texto = prompt("Digite um texto: ")
+// const vogais = "aeiou"
+// let quantidadeVogais = 0
+
+// for (let caracetere of texto) {
+//     if (vogais.includes(caracetere.toLowerCase())) {
+//         quantidadeVogais++
+//     }
+// }
+
+// alert(quantidadeVogais)
+
+
+// // *** Exercício 03 ***
+// CRIE UM PROGRAMA QUE PEÇA UMA FRASE AO USUÁRIO E VERIFIQUE SE ELA É UM PALÍNDROMO
+
+// dontpad.com/inf509-2025

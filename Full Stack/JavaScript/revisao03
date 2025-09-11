@@ -1,0 +1,22 @@
+// let condicao = true
+
+// while (condicao) {
+//     // Código a ser executado
+//     const numero = parseFloat(prompt("Digite um número: "))
+
+//     if (numero != doJeitoQueEuQueriaq) {
+//         continue
+//     }
+// }
+
+// do {
+// // Código a ser executado
+// } while(condicao)
+
+// for (let declaracao = 0; declaracao < 10; declaracao++) {
+//     // Código a ser executado
+// }
+
+// for (let valor of colecao) {
+//     // Código a ser executado
+// }
