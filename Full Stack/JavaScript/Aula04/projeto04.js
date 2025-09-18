@@ -7,16 +7,18 @@
 const listaNomes = [];
 let opcao = "";
 
-while (opcao !== "5") {
+while (opcao !== "6") {
     
-    opcao = prompt(
-        "===== MENU =====\n\n" +
-        "1 - Adicionar nome\n" +
-        "2 - Remover nome\n" +
-        "3 - Editar nome\n" +
-        "4 - Listar nomes\n" +
-        "5 - Parar\n\n" +
-        "Informe a opção desejada:"
+    opcao = prompt(`\
+        ===== MENU =====
+        [1] Adicionar nome
+        [2] Remover nome
+        [3] Editar nome
+        [4] Listar nomes
+        [5] Buscar nomes
+        [6] Parar
+        Informe a opção desejada:
+    `
     );
 
     switch (opcao) {
@@ -69,6 +71,24 @@ while (opcao !== "5") {
             break;
 
         case "5":
+            const termoDigitado = prompt("Digite o termo que deseja buscar:");
+
+            const termoDeBusca = termoDigitado.toLowerCase(); 
+
+            if (termoDeBusca !== null && termoDeBusca.trim() !== "") {
+                const resultados = listaNomes.filter(nome => nome.toLowerCase().includes(termoDeBusca));
+
+                if (resultados.length > 0) {
+                    alert("Nomes encontrados:\n" + resultados.join("\n"));
+                } else {
+                    alert(`O termo de busca "${termoDeBusca}" não foi encontrado na lista.`);
+                }
+            } else {
+                alert("Busca cancelada ou termo inválido.");
+            }
+            break;           
+
+        case "6":
             alert("Programa encerrado.");
             break;
 
