@@ -3,3 +3,6 @@ function saudacao(nome) {
 }
 
 console.log(saudacao("Tatiana"));
+console.log(saudacao("Edmar"));
+console.log(saudacao("Valentim"));
+
